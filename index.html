@@ -3,43 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'Accueil</title>
+    <title>Accueil - Nature</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #0078D7;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4CAF50, #81C784);
             color: white;
-            padding: 1rem 0;
-            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
-        nav {
-            margin: 2rem 0;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
-        a {
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .links a {
             text-decoration: none;
-            color: #0078D7;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px 30px;
+            border-radius: 8px;
             font-size: 1.2rem;
-            margin: 1rem;
+            transition: background-color 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
-            color: #005499;
+
+        .links a:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
 <body>
-    <header>
-    </header>
-    <nav>
-	<a href="lettre_excuses.html" target="_blank">Lettre d'excuses aux générations futures.</a>
-<br><br><br>
-	<a href="https://www.amazon.fr/dp/B0DNQQPW5M" target="_blank">Une histoire d'Inconnu, de Temps, de Solitude et d'Amour, carnet de voyage 2021-2022</a>
-    </nav>
+    <div>
+        <h1>Page accueil Gauthier COURT</h1>
+        <div class="links">
+            <a href="lettre_excuses.html">Lettre d'excuses aux générations futures.</a>
+            <a href="https://www.amazon.fr/dp/B0DNQQPW5M">Une histoire d'Inconnu, de Temps, de Solitude et d'Amour, carnet de voyage 2021-2022</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 - Tous droits réservés
+    </footer>
 </body>
 </html>
