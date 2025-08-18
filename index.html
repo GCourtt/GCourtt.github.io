@@ -1,88 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TFVBC7SD');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TFVBC7SD');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #4CAF50, #81C784);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.2);
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .links a:hover {
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .logo-instagram {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        .logo-instagram img {
-            width: 100px; /* Taille contrôlée */
-            height: auto;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="logo-instagram">
         <a href="https://www.instagram.com/gauthiercourt_public/" target="_blank">
             <img src="insta.png" alt="Logo Instagram">
         </a>
     </div>
-    <div>
+    <div class="container">
         <h1>Page accueil Gauthier COURT</h1>
         <div class="links">
-            <a href="lettre_excuses.html">Lettre d'excuses aux générations futures.</a>
-            <a href="https://www.amazon.fr/dp/B0DNQQPW5M">Une histoire d'Inconnu, de Temps, de Solitude et d'Amour, carnet de voyage 2021-2022</a>
+            <a href="lettre_excuses.html">
+                Lettre d'excuses aux générations futures
+                <span class="tooltip">
+                    Lettre pour tenter de provoquer un éveil aux <br>
+                    causes écologiques.<br>
+                    Temps de lecture approximative ~ 3 minutes
+                </span>
+            </a>
+            <a href="livre_page.html">
+                Une histoire d'Inconnu, de Temps, de Solitude et d'Amour<br>Carnet de voyage 2021-2022
+                <span class="tooltip">
+                    Informations sur la version physique et<br>
+                    digital de mon livre.
+                </span>
+            </a>
         </div>
     </div>
     <footer>
-        &copy; 2024 - Tous droits réservés
+        &copy; 2025 - Tous droits réservés
     </footer>
 </body>
 </html>

@@ -1,0 +1,109 @@
+/* Corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4CAF50, #81C784);
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    /* Ajout pour positionner le footer par rapport au body */
+    display: block;
+    /* Remplace flex pour éviter le centrage vertical */
+    text-align: center;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    /* Centre horizontalement */
+    position: relative;
+    /* Pour que le contenu reste en place */
+}
+
+/* Pied de page */
+footer {
+    position: fixed;
+    /* Reste en bas même en scrollant */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+/* Titre principal */
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Conteneur des liens */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style des liens */
+.links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover des liens */
+.links a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Tooltips */
+.links a .tooltip {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    /* Empêche les retours à la ligne automatiques */
+    box-sizing: border-box;
+    z-index: 10;
+    text-align: left;
+}
+
+
+/* Affichage du tooltip au survol */
+.links a:hover .tooltip {
+    display: block;
+}
+
+
+/* Logo Instagram */
+.logo-instagram {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-instagram img {
+    width: 50px;
+    height: auto;
+}
