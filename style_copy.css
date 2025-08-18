@@ -107,24 +107,42 @@ h2 {
     position: relative;
 }
 
-/* Contenu du "dos de livre" */
-.book-content p {
-    text-indent: 2em;
-    /* Indente chaque paragraphe de 2 fois la taille de la police */
-    margin-top: 0.5em;
-    /* Espacement entre les paragraphes */
-    margin-bottom: 0.5em;
-    text-align: left;
+/* Cadre "dos de livre" */
+.book-back {
+    background: white;
+    color: black;
+    padding: 15px; /* Réduit le padding pour gagner de la place */
+    margin: 20px auto;
+    max-width: 100%; /* Prend toute la largeur disponible sur mobile */
+    height: auto; /* Laisse la hauteur s'adapter au contenu */
+    min-height: 400px; /* Hauteur minimale pour les grands écrans */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Ajoute une barre de défilement si le contenu est trop long */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
 }
 
-/* Image centrée */
-.image-container {
-    margin: 20px auto;
-    max-width: 50%;
+/* Contenu du "dos de livre" */
+.book-content {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 10px; /* Réduit le padding latéral */
+    height: 100%; /* Prend toute la hauteur disponible */
+    overflow-y: auto; /* Barre de défilement si nécessaire */
+    box-sizing: border-box;
 }
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+    .book-back {
+        min-height: 300px; /* Réduit la hauteur minimale sur mobile */
+        max-width: 100%; /* Prend toute la largeur */
+        padding: 10px; /* Réduit encore le padding */
+    }
+    .book-content p {
+        font-size: 0.85rem; /* Réduit légèrement la taille de la police */
+        text-indent: 1.5em; /* Réduit l'indentation */
+    }
 }
