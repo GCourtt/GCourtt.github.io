@@ -107,3 +107,17 @@ h1 {
     width: 50px;
     height: auto;
 }
+
+/* Supprime le style par défaut des h2 */
+.links h2 {
+  font-size: inherit;     /* garde la taille du texte comme avant */
+  font-weight: normal;    /* enlève le gras par défaut */
+  margin: 0;              /* supprime les marges automatiques */
+  padding: 0;
+}
+
+/* Pour garder le style du lien tel que tu l'avais */
+.links h2 a {
+  text-decoration: none;  /* enlève le soulignement si tu veux */
+  color: inherit;         /* garde la couleur du parent */
+}
